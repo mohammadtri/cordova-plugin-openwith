@@ -158,7 +158,7 @@
                     @"data" : data,
                     @"uti": uti,
                     @"utis": utis,
-                    @"name": suggestedName
+                    @"name": ((NSURL*)item).absoluteString//suggestedName
                 };
                 [self.userDefaults setObject:dict forKey:@"image"];
                 [self.userDefaults synchronize];
